@@ -1,0 +1,16 @@
+<%# Le contrôleur devrait lire la question depuis params et calculer une variable d’instance @answer à afficher dans la vue.
+Voici deux requêtes que tu devrais maîtriser :
+
+localhost:3000/answer?question=hello
+localhost:3000/answer?question=what time is it? %>
+<div class="container">
+<h2><%= @answer %></h2>
+<p><em>-Your coach</em></p>
+</div>
+
+<div>
+<h2><%= params[:question] %></h2>
+<p><em>-You</em></p>
+</div>
+
+<%= link_to "question", "/ask" %>
